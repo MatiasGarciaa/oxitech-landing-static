@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Óxitech — Trazabilidad inteligente de activos marítimos para la industria salmonera.">
+    <title>Óxitech — Trazabilidad de activos marítimos.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'oxitech/css/landing.css' %}">
+</head>
+<body>
+
+    <!-- ========== NAV ========== -->
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">Óxitech</a>
+            <ul class="nav__links">
+                <li><a href="#problema">El problema</a></li>
+                <li><a href="#capacidades">Capacidades</a></li>
+                <li><a href="#trazabilidad">Trazabilidad</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="nav__cta">Agendar demo</a>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="hero__content">
+            <p class="hero__eyebrow">Presentamos Óxitech</p>
+            <h1 class="hero__title">
+                Control sobre cada activo,<br>
+                en cada centro,<br>
+                <span class="hero__title--accent">en todo momento.</span>
+            </h1>
+            <p class="hero__subtitle">
+                La primera plataforma de trazabilidad de activos marítimos diseñada para la industria salmonera chilena.
+            </p>
+            <div class="hero__actions">
+                <a href="#problema" class="btn btn--primary">Descubrir Óxitech</a>
+                <a href="#contacto" class="btn btn--ghost">Agendar demo →</a>
+            </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+            <div class="hero__orb"></div>
+            <div class="hero__grid"></div>
+        </div>
+    </section>
+
+    <!-- ========== STAT STRIP ========== -->
+    <div class="stats-strip">
+        <div class="stats-strip__inner">
+            <div class="stat">
+                <p class="stat__number">+900</p>
+                <p class="stat__label">centros marinos activos en Chile al año (SERNAPESCA, 2024)</p>
+            </div>
+            <div class="stat">
+                <p class="stat__number">USD 6.549M</p>
+                <p class="stat__label">en exportaciones salmoneras en 2025</p>
+            </div>
+            <div class="stat">
+                <p class="stat__number">+56.000</p>
+                <p class="stat__label">empleos directos e indirectos en la industria</p>
+            </div>
+            <div class="stat">
+                <p class="stat__number">710</p>
+                <p class="stat__label">denuncias y procesos sancionatorios acumulados 2021–2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MANIFIESTO ========== -->
+    <section class="manifesto" id="problema">
+        <div class="manifesto__inner">
+            <p class="section-eyebrow">El problema</p>
+            <h2 class="manifesto__title">
+                Los activos se mueven. <span class="highlight">El control, no.</span>
+            </h2>
+            <p class="manifesto__text">
+                Una salmonera opera cerca de 1.000 jaulas simultáneas. Cada jaula se compone de pasillos, barandas, postes y sistemas de anclaje —todos de acero galvanizado— que se desarman cuando un centro cierra y migran a otro. Hoy, nadie sabe con certeza dónde está cada activo, cuánto tiempo lleva en el agua ni cuándo fue su última intervención.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== PILLARS ========== -->
+    <section class="pillars" id="capacidades">
+        <div class="pillars__header">
+            <p class="section-eyebrow">Capacidades</p>
+            <h2 class="section-title">Todo lo que necesita, <br>en una sola plataforma.</h2>
+        </div>
+
+        <div class="pillars__grid">
+
+            <article class="pillar pillar--large reveal">
+                <div class="pillar__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C17.373 4 12 9.373 12 16C12 24 24 44 24 44C24 44 36 24 36 16C36 9.373 30.627 4 24 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <circle cx="24" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h3 class="pillar__title">Trazabilidad geolocalizada</h3>
+                <p class="pillar__text">
+                    Cada activo tiene su propia identidad digital. Sepa exactamente en qué centro está, cuándo llegó ahí y de dónde vino. La historia completa de cada activo, disponible en segundos.
+                </p>
+            </article>
+
+            <article class="pillar reveal">
+                <div class="pillar__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="12" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="12" cy="36" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M12 15V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M12 27V33" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 12H38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 24H38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 36H30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="pillar__title">Línea de tiempo por activo</h3>
+                <p class="pillar__text">
+                    Bitácora centralizada que vincula qué se hizo, cuándo y con qué. Desde la instalación inicial hasta el último movimiento entre centros. Sin baches, sin memoria perdida.
+                </p>
+            </article>
+
+            <article class="pillar reveal">
+                <div class="pillar__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="8" width="28" height="32" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M24 18V32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 26L24 32L30 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 14H32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="pillar__title">Importación de datos históricos</h3>
+                <p class="pillar__text">
+                    Cargue sus planillas Excel y CSV existentes. Óxitech los interpreta, los ordena y construye el historial de cada activo desde el primer día. Sin reprocesos.
+                </p>
+            </article>
+
+            <article class="pillar reveal">
+                <div class="pillar__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8H30L36 14V40H12V8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M30 8V14H36" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M18 24H30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 30H30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M18 18H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M28 30L31 33L36 27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="pillar__title">Informes auditables</h3>
+                <p class="pillar__text">
+                    Genere reportes completos en un click, listos para presentar ante SERNAPESCA, la SMA o cualquier auditoría. Cumplimiento normativo sin fricción.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ========== STATEMENT ========== -->
+    <section class="statement" id="trazabilidad">
+        <div class="statement__inner">
+            <p class="statement__label">La industria ya lo exige</p>
+            <h2 class="statement__title">
+                La normativa llegó.
+            </h2>
+            <p class="statement__text">
+                La Resolución Exenta N°1821 exige un control riguroso sobre los artefactos marinos y sus operaciones. Las principales salmoneras del mundo reconocen la necesidad de sistemas que permitan cumplir con certificaciones ASC, Global G.A.P. y estándares nacionales. Óxitech es esa herramienta.
+            </p>
+            <div class="statement__pills">
+                <span class="pill">Res. Exenta N°1821</span>
+                <span class="pill">Certificación ASC</span>
+                <span class="pill">Global G.A.P.</span>
+                <span class="pill">SERNAPESCA</span>
+                <span class="pill">Trazabilidad total</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SHOWCASE ========== -->
+    <section class="showcase">
+        <div class="showcase__inner">
+            <div class="showcase__text reveal">
+                <p class="section-eyebrow">Vista de activos</p>
+                <h2 class="section-title">Cada activo,<br>trazado.</h2>
+                <p class="showcase__paragraph">
+                    Desde el momento en que un activo se instala en un centro hasta su último movimiento, Óxitech registra cada evento. Sepa qué activos son nuevos, cuáles llevan más tiempo en operación y dónde están ahora mismo.
+                </p>
+                <ul class="showcase__list">
+                    <li><span>→</span> Identificación individual con ID único por activo.</li>
+                    <li><span>→</span> Seguimiento de movimientos entre centros.</li>
+                    <li><span>→</span> Historia completa desde la instalación inicial.</li>
+                </ul>
+            </div>
+            <div class="showcase__visual reveal">
+                <div class="mock-window">
+                    <div class="mock-window__bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mock-window__body">
+                        <div class="mock-row mock-row--header">
+                            <span>Activo</span><span>Centro actual</span><span>Estado</span>
+                        </div>
+                        <div class="mock-row">
+                            <span>BR-4821</span><span>Magallanes 03</span><span class="status status--ok">● Óptimo</span>
+                        </div>
+                        <div class="mock-row">
+                            <span>PT-1193</span><span>Aysén 07</span><span class="status status--ok">● Óptimo</span>
+                        </div>
+                        <div class="mock-row">
+                            <span>BR-3047</span><span>Los Lagos 12</span><span class="status status--warn">● Revisar</span>
+                        </div>
+                        <div class="mock-row mock-row--alert">
+                            <span>JA-0882</span><span>En tránsito →</span><span class="status status--crit">● Crítico</span>
+                        </div>
+                        <div class="mock-row">
+                            <span>BR-5510</span><span>Los Lagos 12</span><span class="status status--ok">● Óptimo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="how">
+        <div class="how__inner">
+            <p class="section-eyebrow">¿Cómo funciona?</p>
+            <h2 class="section-title">Tres pasos para<br>tener control total.</h2>
+            <div class="how__steps">
+                <div class="how__step">
+                    <p class="how__step-number">01</p>
+                    <h3 class="how__step-title">Cargue sus activos</h3>
+                    <p class="how__step-text">Importe sus registros existentes en Excel o CSV. Óxitech construye el inventario digital de cada activo, con su historial desde el primer día.</p>
+                </div>
+                <div class="how__step-connector" aria-hidden="true">→</div>
+                <div class="how__step">
+                    <p class="how__step-number">02</p>
+                    <h3 class="how__step-title">Sus cuadrillas alimentan el sistema</h3>
+                    <p class="how__step-text">Las mediciones y condiciones levantadas en terreno se ingresan directamente. Óxitech las estandariza y vincula a cada activo automáticamente.</p>
+                </div>
+                <div class="how__step-connector" aria-hidden="true">→</div>
+                <div class="how__step">
+                    <p class="how__step-number">03</p>
+                    <h3 class="how__step-title">Visibilidad total, siempre</h3>
+                    <p class="how__step-text">Con el historial acumulado, sepa en todo momento dónde está cada activo, en qué estado se encuentra y cuándo necesitará atención.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta" id="contacto">
+        <div class="cta__inner">
+            <h2 class="cta__title">
+                Sus activos se mueven.<br>
+                <span class="cta__title--accent">Su información, también debería.</span>
+            </h2>
+            <p class="cta__text">
+                Agende una demo de 30 minutos con el equipo de Óxitech. Le mostraremos cómo se vería la plataforma con los datos de su operación.
+            </p>
+            <div class="cta__actions">
+                <a href="mailto:contacto@oxitech.cl" class="btn btn--primary btn--large">Agendar demo</a>
+                <a href="#problema" class="btn btn--ghost btn--large">Conocer más →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <p class="footer__logo">Óxitech</p>
+                <p class="footer__tagline">Trazabilidad de activos marítimos, reinventada.</p>
+            </div>
+            <div class="footer__cols">
+                <div>
+                    <p class="footer__heading">Producto</p>
+                    <ul>
+                        <li><a href="#capacidades">Capacidades</a></li>
+                        <li><a href="#trazabilidad">Trazabilidad</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__heading">Empresa</p>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__heading">Legal</p>
+                    <ul>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Óxitech. Universidad de Los Andes.</p>
+            <p>Hecho en Chile.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'oxitech/js/landing.js' %}"></script>
+</body>
+</html>
